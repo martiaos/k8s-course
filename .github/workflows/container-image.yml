@@ -11,6 +11,9 @@ jobs:
   build:
     name: Build container image
     runs-on: ubuntu-latest
+    permissions: 
+        contents: read
+        packages: write
     steps:
       -
         name: Checkout code
